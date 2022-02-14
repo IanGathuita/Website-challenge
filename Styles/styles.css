@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    min-width: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    max-width: 100vw;
+}
+
+p{
+    font-size:16px ;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+h3{
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+h2{
+    font-size:20px ;
+    line-height: 32px;
+    margin-bottom: 8px;
+}
+h1{
+    font-size:28px ;
+    line-height: 36px;
+}
+.padded,nav{
+    padding:0 16px
+}
+header{
+    display:flex;
+    align-items: baseline;
+    flex-direction: row;
+    padding:16px;
+}
+header h1{
+    flex-grow: 4;
+}
+header span{
+    flex-grow: 1;
+}
+ul{
+    list-style-type: none;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav ul li{
+    margin:8px;
+}
+.we-ensure{
+    padding: 80px 8px;
+    text-align: center;
+}
+.we-ensure button{
+    border-radius: 50px;
+}
+button{
+    padding:16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border:1px solid transparent;
+    font-weight: bolder;
+}
+.blue-background{
+    background-color:blue;
+    color:white
+}
+.blue{
+    color: blue;
+    font-weight: bold;
+}
+.transparent-background{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.absolute-cards .card{
+    background-color: white;
+    box-shadow: 2px 2px 4px 1px #999999;
+    border-radius: 0px;
+    padding: 16px 8px;
+    border-color: transparent;
+}
+.card{
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+.cards-2{
+    text-align: center;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+.card-2{
+    margin-bottom: 8px;
+    
+
+}
+.partners *{
+    text-align: center;
+}
+
+.blue-icon{
+    color:blue;
+    font-size:36px
+}
+.green-icon{
+    color:green;
+    
+}
+.people{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.person{
+    padding: 8px;
+    max-width: 80%;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid gray;
+    
+}
+.person img{
+    max-width: 40%;
+    margin-bottom: 8px;
+}
+
+.vectors{
+    padding: 8px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vectors img{
+    max-width: 30%;
+    margin-bottom: 32px;
+}
+.subscribe{
+    background-image: linear-gradient(to right,blue,magenta);
+    padding: 8px;
+    color: white;
+}
+.subscribe button{
+    border-radius: 0px;
+    border: 1px solid white;
+}
+input{
+    padding:16px 8px;
+    border: 1px solid white;
+}
+.subscribe input{
+    margin-right: 0;
+}
+.subscribe input:focus{
+    outline: none;
+}
+.subscribe button{
+    margin-left: 0;
+}
+.pricing{
+    padding:8px 0;
+    
+}
+.pricing-card{
+    border: 1px solid blue;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+.pricing-card:first-of-type{
+    margin-top: 16px;
+}
+.pricing-card P{
+    display: inline;
+}
+.per-month-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2,minmax(16px,16px));
+    margin-bottom: 8px;
+    min-width: 100%;
+}
+.price{
+    grid-row: 1/3;
+    grid-column:1/2;
+    align-self: center;
+}
+.dollar{
+    grid-row: 1/2;
+    grid-column:2/3;
+}
+.pm{
+    grid-row: 2/3;
+    grid-column:2/3;
+}
+.pricing-card > p{
+    margin-bottom: 8px; 
+}
+.pricing-card > span{
+    margin-bottom: 8px; 
+}
+.pricing-card button{
+    min-width: 100%;
+    border-radius: 8px;
+}
+.branches p, .branches h2{
+    position: relative;
+    left: 0;
+    top:0;
+    text-align: left;
+}
+
+.form-grid{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-bottom: 8px;
+}
+#family-img{
+    grid-row: 1/2;
+}
+#book{
+    grid-row: 2/3;
+    text-align: left;
+}
+#book input{
+    display: block;
+    min-width: 100%;
+    margin-bottom: 8px;    
+}
+#book button{
+    min-width: 100%;
+}
+label{
+    margin-bottom: 4px;
+}
+footer{
+    padding: 16px;
+}
+footer div{
+    margin-bottom: 8px;
+}
+.desktop-img-background{
+    background-color: #666666;
+     background-image: url('../Images/%23hero-cover.3.png');
+     /*background-position: center;*/
+     background-blend-mode: multiply;
+     background-size: cover;
+     color: white;
+   
+}
+.login{
+    display: none;
+}
+.login button{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.branches{
+    background-color: #001a33;
+    color: white;
+    padding-top: 32px;
+    margin: 0;
+}
+.form-flex form{
+    background-color: white;
+    color:black;
+}
+.form-flex form input{
+    max-width: 100%;
+}
+#contact-us{
+    margin-top: 16px;
+}
+a{
+    text-decoration: none;
+    color:#666666
+}
+
+
+
+
+@media only screen and (min-width:768px){
+    .desktop-img-background{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-auto-rows: minmax(80px,auto);
+        position: relative;
+        top: 0;
+        left:0;
+    }
+    header *{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 80px;
+    }
+    header>span{
+        display: none !important;
+    }
+    .login{
+        display: flex;
+        align-items: center;
+        margin-right: 0px;
+    }
+    .login p {
+        margin-right: 8px;
+        margin-top: 8px;
+    }
+    .login button{
+        padding: 8px;
+    }
+    nav{
+        vertical-align: middle;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .we-ensure{
+        grid-row: 2/3;
+        grid-column:1/4 ;
+        margin-bottom: 80px;
+    }
+    .absolute-cards{
+        max-width: 100vw;
+        min-width: 98vw;
+        padding: 0 80px;
+        /* border: 1px solid red; */
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+        right: 0;
+        color: black;
+        
+    }
+    .cards-2{
+        padding-top: 160px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .partners .padded>p{
+        max-width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .vectors{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: calc(80% + 32px);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    .vectors img{
+        max-width: 5%;
+        margin-bottom: 32px;
+    }
+    .subscribe{
+        display:flex;
+        justify-content: flex-end;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    .subscribe h2{
+        margin-right: auto;
+    }
+    .people{
+        display: flex;
+        justify-content: space-around;
+        max-width: 80%;        
+    
+    }
+    .person{
+        max-width: 20%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .pricing{
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pricing>p{
+        max-width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
+    
+    .pricing-cards{
+        display: flex;
+        justify-content: center;
+    }
+    .pricing-card, .pricing-card:first-of-type{
+        margin-top: 32px;
+    }
+    .pricing-card:nth-child(2){
+        margin-top: 8px;
+        background-color: #001a33;
+        color: white;
+    }
+    .price{
+        margin-bottom: 0;
+        font-size: 32px;
+    }
+    .branches{
+        display: flex;
+    }
+    .branches p{
+        margin-bottom: 400px;
+    }
+    .branches img{
+        align-self: flex-start;
+    }
+    .form-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        max-width: 50vw;
+        min-width: 50vw;
+        position: absolute;
+        left:25vw;
+        bottom: -200px;
+    }
+    .form-flex img{
+       max-width: 200px;
+       height: auto;
+       object-fit: cover;
+       flex-grow: 1;
+    }
+    #book{
+        flex-basis: calc(50vw - 200px);
+        flex-grow: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 16px;
+    }
+    #book input{
+        border: 1px solid #737373;
+    }
+    #book button{
+        background-color: blue;
+        color: white;
+    }
+    
+    .branches{
+        position: relative;
+        top:0;
+        left:0;
+    }
+    .branches div{
+        flex-shrink: 1;
+        flex-basis: 90%;
+        flex-grow: 1;
+    }
+    .branches img{
+        flex-shrink: 2;
+        flex-basis: 10%;
+        flex-grow: 1;
+    }
+    
+    #contact-us{
+        padding-top: 250px;
+        display: grid;
+        grid-template-areas: "heading2 btn"
+        "paragraph btn";
+    }
+    #contact-us h2{
+        grid-area: heading2;
+        
+    }
+    #contact-us p{
+        grid-area: paragraph;        
+    }
+    #contact-us button{
+        grid-area: btn;
+        background-color: blue; 
+        color: white;
+        margin: 16px;
+        max-width: 160px;
+        min-width: none;      
+    }
+    footer > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+
+}
